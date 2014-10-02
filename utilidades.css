@@ -1,0 +1,42 @@
+html
+{
+	Box-sizing: border-box;
+}
+*, *:before, *:after{
+	Box-sizing:inherit;
+}
+
+
+.cf:before, .cf:after
+{
+	content: " ";
+	display:table;
+}
+
+.cf:after
+{
+  clear:both;
+}	
+
+.verticalcenter
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.horizontalcenter
+{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.totalcenter
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%) transform: translateX(-50%);
+	position: relative;
+	left: 50%;
+}
